@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
+html { font-size: 62.5% }
+
 body {
     font-family: 'Poppins', sans-serif;
-    font-size:1rem;
     font-weight: 400;
     background: linear-gradient(to bottom right,#fc00ff, #00dbde);
     text-align: center;
@@ -23,17 +24,17 @@ header {
 }
 
 header #title {
-    font-size: 1.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
-    letter-spacing: .1rem;
+    letter-spacing: .3rem;
     text-transform: uppercase;
     color: #f1faee;
 }
 
 header #description {
-    font-size: .9rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
     color: #f1faee;
 }
 
@@ -41,19 +42,19 @@ form{
     margin-top: .5rem;
     background-color: #1d3557;
     padding: 2rem 1.5rem;
-    width: 32rem;
+    width: 45rem;
     border-radius: .2rem;
     text-align: left;
 }
 
 .form-group {
-    margin-bottom: .91rem;
+    margin-bottom: 1rem;
 }
 
 .form-group label {
     color: white;
     display:block;
-    font-size: .8rem;
+    font-size: 1.2rem;
     margin-bottom: .2rem;
     font-weight: 500;
 }
@@ -64,16 +65,31 @@ form{
     border: 0;
 }
 
+
+
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="number"] {
     width: 100%;
     margin-bottom: .4rem;
+    background-color: #ee6c4d;
+    transition: all .2s;
 }
+
+.form-group input[type="text"]:hover,
+.form-group input[type="email"]:hover,
+.form-group input[type="number"]:hover,
+.form-group select:hover, 
+.form-group textarea:hover  {
+    background-color:#00dbde;
+    color: black;
+}
+
+::placeholder { color: white; }
 
 .form-group .head {
     color: white;
-    font-size: .8rem;
+    font-size: 1.5rem;
     margin-bottom: .2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -97,4 +113,29 @@ span {
 
 .form-group textarea {
     width: 100%;
+}
+
+select,
+textarea {
+    color: white;
+    background-color: #ee6c4d;
+    transition: all .2s;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #ee6c4d;
+    font-weight: 600;
+    border: 0;
+    padding: .4rem .6rem;
+    border-radius: .2rem;
+    color: white;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+.submit-button:active,
+.submit-button:hover {
+    background-color: #00dbde;
+    color: black;
 }
