@@ -13,23 +13,23 @@
     <div class="container">
            <header class="header">
               <h1 id="title">A Survey Form</h1>
-              <p id="description">Fill this Survey from ASAP!!!</p>
+              <p id="description">Thank you for taking the time to fill this form</p>
            </header>
            <form id="survey-form">
                <div class="form-group">
-                   <label id="name-label" for="name">Name</label>
+                   <label class="head" id="name-label" for="name">Name</label>
                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
                </div>
                <div class="form-group">
-                   <label id="email-label" for="email">Email</label>
+                   <label class="head" id="email-label" for="email">Email</label>
                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required>
                </div>
                <div class="form-group">
-                   <label id="number-label" for="number">Age</label>
+                   <label class="head" id="number-label" for="number">Age</label>
                    <input type="number" id="number" min="10" max="110" placeholder="Age">
                </div>
                <div class="form-group">
-                <label for="dropdown">Which option best describes your current role?</label>
+                <label class="head" for="dropdown">Which option best describes your current role?</label>
                     <select id="dropdown" name="dropdown">
                         <option disabled selected value="select-your-role">Select Your Role</option>
                         <option value="student">Student</option>
@@ -40,16 +40,25 @@
                     </select>
                </div>
                <div class="form-group">
-                    <p>Would you recommend this to a friend?</p>
-                    <label for="definitely">Definitely</label>
-                      <input type="radio" id="definitely" name="choice" value="definitely">
-                    <label for="maybe">Maybe</label> 
-                        <input type="radio" id="maybe" name="choice" value="maybe">            
-                    <label for="notSure">Not Sure</label>     
-                        <input type="radio" id="notSure" name="choice" value="notSure">
+                    <p class="head">Would you recommend this to a friend?</p>
+                    <label for="definitely">
+                        <input type="radio" id="definitely" name="choice" value="definitely">
+                        Definitely
+                    </label>
+                      
+                    <label for="maybe">
+                        <input type="radio" id="maybe" name="choice" value="maybe">
+                        Maybe
+                    </label> 
+                                   
+                    <label for="notSure">
+                         <input type="radio" id="notSure" name="choice" value="notSure">
+                         Not Sure
+                        </label>     
+                       
                </div>
                <div class="form-group">
-                    <p>Select all of your preferences</p>
+                    <p class="head">Which field needs improvement?<span>(Choose all the preferences)</span></p>
                     <label for="preference">
                         <input type="checkbox" name="preference" id="Front-end Projects" value="front-end-projects" clas="checkboxes">
                         Front-end Projects 
@@ -96,13 +105,15 @@
                     </label>
                </div>
                <div class="form-group">
-                   <p>Any comments or suggestions??</p>
-                   <textarea name="comment" id="comments" placeholder="write something here..."></textarea>
+                   <p class="head" >Any comments or suggestions??</p>
+                   <textarea name="comment" id="comments" placeholder="write something here..." rows="5"></textarea>
                </div>
                <div class="form-group">
                    <button type="submit" id="submit" class="submit-button">Submit</button>
                </div>
            </form>
     </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
